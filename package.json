@@ -2,7 +2,7 @@
   "name": "json-multi-lang-converter",
   "displayName": "Json multi lang converter",
   "version": "0.0.1",
-  "description": "a json converter ",
+  "description": "a json converter",
   "author": "kaiyang939325@gmail.com",
   "scripts": {
     "dev": "plasmo dev",
@@ -10,9 +10,28 @@
     "package": "plasmo package"
   },
   "dependencies": {
+    "@codemirror/lang-go": "^6.0.0",
+    "@codemirror/language": "^6.10.1",
+    "@codemirror/legacy-modes": "^6.4.0",
+    "@codemirror/state": "^6.4.1",
+    "@codemirror/view": "^6.26.1",
+    "@radix-ui/react-icons": "^1.3.0",
+    "@radix-ui/react-separator": "^1.0.3",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-tooltip": "^1.0.7",
+    "@shadcn/ui": "^0.0.4",
+    "@uiw/codemirror-theme-monokai": "^4.21.25",
+    "@uiw/react-codemirror": "^4.21.25",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "codemirror": "^6.0.1",
     "plasmo": "0.85.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-codemirror2": "^7.3.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "^6.22.3",
+    "tailwind-merge": "^2.2.2",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "4.1.1",
@@ -20,12 +39,28 @@
     "@types/node": "20.11.5",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
     "prettier": "3.2.4",
+    "tailwindcss": "^3.4.3",
     "typescript": "5.3.3"
   },
   "manifest": {
     "host_permissions": [
       "https://*/*"
+    ],
+    "permissions": [
+      "scripting"
+    ],
+    "web_accessible_resources": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "resources": [
+          "tabs/index.html"
+        ]
+      }
     ]
   }
 }
