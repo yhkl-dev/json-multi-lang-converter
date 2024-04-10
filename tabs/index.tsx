@@ -18,8 +18,10 @@ export default function DeltaFlyerPage() {
 
   return (
     <div className="flex h-screen w-screen">
-      <div className="w-64 bg-gray-800 grid gap-1 px-2 justify-center">
+      <div className="w-64 bg-gray-800  gap-2 px-2 justify-center">
         <Button className="w-full text-white" variant="ghost">JSON to GO</Button>
+        <Button className="w-full text-white" variant="ghost">JSON to Thrift</Button>
+        <Button className="w-full text-white" variant="ghost">JSON to Protobuf</Button>
       </div>
       <div className="flex-1 flex">
         <div className="w-1/2 p-4 ">
